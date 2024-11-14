@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+<main class="flex flex-col justify-center items-center">
+  <div class="rounded-md shadow-md border border-gray-300">
+    <nav class="flex">
+      <a href="./" class="px-6 py-3 border-r border-gray-300 text-gray-500 hover:bg-gray-800 hover:text-gray-300 rounded-l-md font-medium">Flywheel</a>
+      <a href="./elevator" class="px-6 py-3 border-r border-gray-300 text-gray-500 hover:bg-gray-800 hover:text-gray-300 font-medium">Elevator</a>
+      <a href="./arm" class="px-6 py-3 text-gray-500 hover:bg-gray-800 hover:text-gray-300 rounded-r-md font-medium">Arm</a>
+    </nav>
+  </div>
+  <hr class="border-teal-400 m-6 w-[80vw]" />
+  <div>
+	<canvas class="bg-purple-400 w-[50vw] h-[80vh]"></canvas>
+  </div>
+</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+</style>
